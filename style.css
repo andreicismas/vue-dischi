@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(25, 55, 185, 0.863);
+}
+.head_part{
+    background-color: rgba(43, 58, 126, 0.863);
+}
+
+.max_container{
+    width: 100%;
+    height: 100%;
+}
