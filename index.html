@@ -19,13 +19,14 @@
 
         <div class="max_container" id="app">
 
-            <div class="card_container container">
+            <div class="card_container">
 
-                <div class="cd_container">
-                    <img src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" >
-                    <h3>Nome disco </h3>
-                    <span class="author_cd">autore</span><br>
-                    <span class="year_cd">anno</span>
+                <div class="disc_container" 
+                    v-for="top_disc in listAxios">
+                        <img v-bind:src="top_disc.poster" alt="top_disc.author" >
+                        <span>{{ top_disc.title }}</span>
+                        <span class="author_cd">{{top_disc.author}}</span><br>
+                        <span class="year_cd">{{ top_disc.year }}</span>
                 </div>
 
             </div>
