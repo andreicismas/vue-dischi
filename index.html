@@ -13,25 +13,26 @@
         <title>Vue - dischi musicali</title>
     </head>
     <body>
+        <div class="max_container" id="app">
         <header class="head_part">
             <h1>My music</h1>
             <div class="select_part">
                 <select v-model="genre_selected">
                     <option value="">Tutti i generi</option>
-                    <option v-for="type in generInclud" >{{ type }}</option>
+                    <option v-for="type in generInclud" :value="type">{{type}}</option>
 
                 </select>
                 
             </div>
             
         </header>
-
-        <div class="max_container" id="app">
+        
 
             <div class="card_container">
 
                 <div class="disc_container" 
-                    v-for="top_disc in listAxios">
+                    v-for="top_disc in listAxios"
+                    v-if="genre_selected === '' || genre_selected == top_disc.genre">
                         <img v-bind:src="top_disc.poster" alt="top_disc.author" >
                         <span>{{ top_disc.title }}</span>
                         <span class="author_cd">{{top_disc.author}}</span><br>
