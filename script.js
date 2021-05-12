@@ -2,7 +2,7 @@ const app = new Vue({
     el: '#app',
     data: {
         listAxios:[],
-        generinclud:[],
+        generInclud:[],
     },
     mounted() {
 
