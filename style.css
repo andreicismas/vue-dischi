@@ -3,12 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* head part */
+.select_part{
+    display: flex;
+    align-items: center;
+}
+.select_part select{
+    border-radius:4px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(138, 138, 79);
+}
 
 body{
     background-color: rgba(25, 55, 185, 0.863);
 }
 .head_part{
     background-color: rgba(43, 58, 126, 0.863);
+    display: flex;
+    justify-content: space-around;
 }
 
 .max_container{
