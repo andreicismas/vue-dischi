@@ -3,6 +3,7 @@ const app = new Vue({
     data: {
         listAxios:[],
         generInclud:[],
+        genre_selected:"",
     },
     mounted() {
 
@@ -13,10 +14,10 @@ const app = new Vue({
                 console.log(this.listAxios)
                 
                 // recupero il genere musica
-                this.listAxios.forEach(disco => {
-                    if(!this.generinclud.includes(disco.genre)) {
-                        this.generinclud.push(disco.genre);
-                        console.log(this.generinclud);
+                this.listAxios.forEach(disc => {
+                    if(!this.generInclud.includes(disc.genre)) {
+                        this.generInclud.push(disc.genre);
+                        console.log(this.generInclud);
                     }
                 });
             });
